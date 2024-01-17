@@ -1,127 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shotokan Karate all Katas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          font-family: 'Kanit', sans-serif;
-          width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: repeat;
-        background-image: url("topimg.svg");
-        }
-    
-        .video-container {
-          flex: 0 0 30%;
-          margin: 10px;
-        }
-    
-        .video-container a {
-          text-decoration: none;
-          color: black;
-        }
-    
-        .video-container h3 {
-          margin: 0;
-          text-align: center;
-        }
-    
-        .video-container img {
-          max-width: 100%;
-          height: auto;
-          display: block;
-          margin: 10px auto;
-        }
-        .h1title{
-            font-weight: 800;
-            text-decoration: underline;
-        }
-        .topicdiv{
-            margin: 0 40px 0 20px;
-            text-align: justify;
-            text-justify: inter-word;
-        }
-      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shotokan Karate all Katas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;800&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-family: 'Kanit', sans-serif;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: repeat;
+      background-image: url("topimg.svg");
+    }
+
+    .video-container {
+      flex: 0 0 30%;
+      margin: 10px;
+    }
+
+    .video-container a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .video-container h3 {
+      margin: 0;
+      text-align: center;
+    }
+
+    .video-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .h1titledesktop,
+    .h1titlemobile {
+      font-weight: 800;
+      text-decoration: underline;
+    }
+
+    .topicdiv {
+      margin: 0 40px 0 20px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .h1titlemobile {
+      display: none;
+    }
+
+    /* Media query to hide images on devices with a maximum width of 768 pixels (typical mobile devices) */
+    @media only screen and (max-width: 768px) {
+      #logo {
+        display: none;
+      }
+
+      .h1titlemobile {
+        display: block;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="h1title">
-        <h1>Shotokan Karate all Katas</h1>
-    </div>
-    
-    <div class="topicdiv">
-    Kata is a Japanese word that means "form". 
-    It is a structured way of doing things or practice. 
-    In Japanese martial arts, kata is a detailed choreographed pattern of movements that are practiced alone or in groups. It is a way to memorize and perfect the movements being executed. 
-    In karate, kata is the practice of performing sequences of specific moves targeting a virtual opponent. Athletes must perform a different kata each time. Technical and athletic performance are given separate scores using the same scale from 5.0 to 10.0. 
-    Kata can also be a prefix meaning "down," "against," or "back". It occurs originally in loanwords from Greek, such as "cataclysm," "catalog," and "catalepsy".
-    <p></p>
-    <h4>There are in total 26 Katas in Sotokan Karate in total</h4>
+  <table id="logo" style="text-align: center; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td style="vertical-align: top; text-align: center; width: 20%;"><img style="width: 86px; height: 87px;"
+            alt="Logo" src="logo.png"><br>
+        </td>
+        <td style="vertical-align: top;">
+          <div class="h1titledesktop">
+            <h1 style="text-align: center;">All Katas of Shotokan Karate</h1>
+          </div>
+        </td>
+        <td style="vertical-align: top; text-align: center; width: 20%;"><img style="width: 146px; height: 83px;"
+            alt="KARATE" src="Karate.png"><br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="h1titlemobile">
+    <h1 style="text-align: center;">All Katas of Shotokan Karate</h1>
+  </div>
+
+  <div class="topicdiv">
+    <ul>
+      <li> Kata is a Japanese word that means "form". It is a structured way of doing things or practice. </li>
+      <li>In Japanese martial arts, kata is a detailed choreographed pattern of movements that are practiced alone or in
+        groups. </li>
+      <li>It is a way to memorize and perfect the movements being executed. In karate, kata is the practice of
+        performing sequences of specific moves targeting a virtual opponent. </li>
+      <li>Athletes must perform a different kata each time. </li>
+      <li>Technical and athletic performance are given separate scores using the same scale from 5.0 to 10.0. Kata can
+        also be a prefix meaning "down," "against," or "back". </li>
+      <li>It occurs originally in loanwords from Greek, such as "cataclysm," "catalog," and "catalepsy". </li>
+    </ul>
+    <h4>There are in total 26 Katas in Sotokan Karate.</h4>
     <h3>Those katas are as following:-</h3>
-    </div>
-    <script>
-        let i = 1;
-        const katakanaList = [
-          { name: "Taikyoku Groups", url: "https://www.youtube.com/watch?v=t8Zr9aoAPYE" },
-          { name: "Heian Groups", url: "https://www.youtube.com/watch?v=YRoFA0IiZG0" },
-          { name: "Tekki Groups", url: "https://www.youtube.com/watch?v=uifXvEXd_NU" },
-          { name: "Bassai Dai", url: "https://www.youtube.com/watch?v=Qpt3W7Y06Kg" },
-          { name: "Bassai Sho", url: "https://www.youtube.com/watch?v=zpnA13Vg1lY" },
-          { name: "Kanku Dai", url: "https://www.youtube.com/watch?v=5Hgi2vi9EbA" },
-          { name: "Kanku Sho", url: "https://www.youtube.com/watch?v=veaayoYQ9D4" },
-          { name: "Enpi", url: "https://www.youtube.com/watch?v=IInNlHZQUrE" },
-          { name: "Jion", url: "https://www.youtube.com/watch?v=KErsdtTwqM8" },
-          { name: "Gankaku", url: "https://www.youtube.com/watch?v=OJi3lwnx0jI" },
-          { name: "Hangetsu", url: "https://www.youtube.com/watch?v=vOP8dAalfms" },
-          { name: "Jitte", url: "https://www.youtube.com/watch?v=IWZOQd6dvww" },
-          { name: "Chinte", url: "https://www.youtube.com/watch?v=RgwDv8MChWg" },
-          { name: "Sochin", url: "https://www.youtube.com/watch?v=KqmlVtZZuxY" },
-          { name: "Meikyo", url: "https://www.youtube.com/watch?v=HbX9X3JEI1E" },
-          { name: "Jiin", url: "https://www.youtube.com/watch?v=b8RcGoE7XiI" },
-          { name: "Gojushiho Dai", url: "https://www.youtube.com/watch?v=qVGcqVEBRRs" },
-          { name: "Gojushiho Sho", url: "https://www.youtube.com/watch?v=c2qiJNrCYGw" },
-          { name: "Nijushiho", url: "https://www.youtube.com/watch?v=ZE8EqPvwruE" },
-          { name: "Wankan", url: "https://www.youtube.com/watch?v=DzFP2UilMtI" },
-          { name: "UNSU", url: "https://www.youtube.com/watch?v=MjVKvHf_Ny0" },
-        ];
-      
-        for (const katakana of katakanaList) {
-        const div = document.createElement("div");
-        div.className = "video-container";
+  </div>
 
-        const a = document.createElement("a");
-        a.href = katakana.url;
-        a.target = "_blank";
-        a.title = "learn";
+  <script>
+    let i = 1;
+    const katakanaList = [
+      { name: "Taikyoku Groups", url: "https://www.youtube.com/watch?v=t8Zr9aoAPYE" },
+      { name: "Heian Groups", url: "https://www.youtube.com/watch?v=YRoFA0IiZG0" },
+      { name: "Tekki Groups", url: "https://www.youtube.com/watch?v=uifXvEXd_NU" },
+      { name: "Bassai Dai", url: "https://www.youtube.com/watch?v=Qpt3W7Y06Kg" },
+      { name: "Bassai Sho", url: "https://www.youtube.com/watch?v=zpnA13Vg1lY" },
+      { name: "Kanku Dai", url: "https://www.youtube.com/watch?v=5Hgi2vi9EbA" },
+      { name: "Kanku Sho", url: "https://www.youtube.com/watch?v=veaayoYQ9D4" },
+      { name: "Enpi", url: "https://www.youtube.com/watch?v=IInNlHZQUrE" },
+      { name: "Jion", url: "https://www.youtube.com/watch?v=KErsdtTwqM8" },
+      { name: "Gankaku", url: "https://www.youtube.com/watch?v=OJi3lwnx0jI" },
+      { name: "Hangetsu", url: "https://www.youtube.com/watch?v=vOP8dAalfms" },
+      { name: "Jitte", url: "https://www.youtube.com/watch?v=IWZOQd6dvww" },
+      { name: "Chinte", url: "https://www.youtube.com/watch?v=RgwDv8MChWg" },
+      { name: "Sochin", url: "https://www.youtube.com/watch?v=KqmlVtZZuxY" },
+      { name: "Meikyo", url: "https://www.youtube.com/watch?v=HbX9X3JEI1E" },
+      { name: "Jiin", url: "https://www.youtube.com/watch?v=b8RcGoE7XiI" },
+      { name: "Gojushiho Dai", url: "https://www.youtube.com/watch?v=qVGcqVEBRRs" },
+      { name: "Gojushiho Sho", url: "https://www.youtube.com/watch?v=c2qiJNrCYGw" },
+      { name: "Nijushiho", url: "https://www.youtube.com/watch?v=ZE8EqPvwruE" },
+      { name: "Wankan", url: "https://www.youtube.com/watch?v=DzFP2UilMtI" },
+      { name: "UNSU", url: "https://www.youtube.com/watch?v=MjVKvHf_Ny0" },
+    ];
 
-        const h3 = document.createElement("h3");
-        h3.textContent = `${i}. ${katakana.name}`;
+    for (const katakana of katakanaList) {
+      const div = document.createElement("div");
+      div.className = "video-container";
 
-        const img = document.createElement("img");
-        img.src = getYouTubeThumbnailURL(katakana.url);
+      const a = document.createElement("a");
+      a.href = katakana.url;
+      a.target = "_blank";
+      a.title = "learn";
 
-        a.appendChild(img);
-        a.appendChild(h3);
-        div.appendChild(a);
+      const h3 = document.createElement("h3");
+      h3.textContent = `${i}. ${katakana.name}`;
 
-        document.body.appendChild(div);
-        i++;
-        }
+      const img = document.createElement("img");
+      img.src = getYouTubeThumbnailURL(katakana.url);
 
-        function getYouTubeThumbnailURL(videoURL) {
-        const videoIdMatch = videoURL.match(/(?:\?v=|\/embed\/|\/\d\/|\/vi\/|youtu\.be\/|\/\?vi?=|\/embed\/|\/shorts\/)([^"&?\/\s]{11})/);
-        const videoId = (videoIdMatch && videoIdMatch[1]) || null;
-        return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-        }
-    </script>          
+      a.appendChild(img);
+      a.appendChild(h3);
+      div.appendChild(a);
+
+      document.body.appendChild(div);
+      i++;
+    }
+
+    function getYouTubeThumbnailURL(videoURL) {
+      const videoIdMatch = videoURL.match(/(?:\?v=|\/embed\/|\/\d\/|\/vi\/|youtu\.be\/|\/\?vi?=|\/embed\/|\/shorts\/)([^"&?\/\s]{11})/);
+      const videoId = (videoIdMatch && videoIdMatch[1]) || null;
+      return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+    }
+  </script>
 </body>
+
 </html>
